@@ -30,24 +30,18 @@
 
 #let cite(MainAuthorLastName, CiteYear, Authors, Quals, Journal, Title, Date, linkdoi) = {
   text(size: 13pt, weight: "bold", font: "Calibri")[#MainAuthorLastName #CiteYear]
-  " [" + Authors + ", " + Quals + ", " + emph(Journal) + ", " + " '"+ Title + ",' "  + Date + ", " + linkdoi + ", chin]"
+  " [" + Authors + ", " + Quals + ", " + emph(Journal) + ", " + " '"+ Title + ",' "  + Date + ", " + linkdoi + "]"
 }
 
-#pocket("DA---Politics")
+#pocket("Pocket")
 
-#tag("hi")
+#hat("Hat")
 
-#tag("hi")
+#block("Block")
 
-#tag("hi")
+#tag("Tag")
 
-#hat("Uniqueness")
-
-#block("U---2NC")
-
-#tag("Bill passes now heeha.")
-
-#cite("Khaladkar and Thirumala", "'12-14", "Chinmay Khaladkar[1] Adhi Thirumala[2]", "[1]Non-technical EE major [2]Jeet", "Jeetness Edition 10", "No Jeet No World", "12-14-2025", "substack.com")
+#cite("Khaladkar and Thirumala", "'12-14", "Chinmay Khaladkar[1] Adhi Thirumala[2]", "[1]EE @ UCSB [2]CS @ UIUC", "Example Journal", "Example Title", "12-14-2025", "https://github.com/cxnmai/verbatypst.git")
 
 The Emergency Grid Resilience and Cybersecurity Act #underline("passed within a " + strong("week") + " because it addressed an immediate, highly visible national risk with broad, bipartisan agreement.") A recent near-miss cyber incident affecting regional power operators created urgency across party lines, reframing infrastructure security as a public-safety issue rather than a partisan one. The bill’s narrow scope—funding rapid security audits, patching critical vulnerabilities, and coordinating federal–state response protocols—avoided ideological flashpoints. Key committee chairs pre-negotiated language before introduction, ensuring it aligned with existing authorities and required no new regulatory regime. As a result, leadership fast-tracked the bill under suspension rules, limiting amendments and expediting floor consideration.
 
