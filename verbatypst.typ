@@ -32,6 +32,14 @@
   text(size: 13pt, weight: "bold", font: "Calibri")[#MainAuthorLastName #CiteYear]
   " [" + Authors + ", " + Quals + ", " + emph(Journal) + ", " + " '"+ Title + ",' "  + Date + ", " + linkdoi + "]"
 }
+//
+#let ibox(content) = {
+  box(
+    inset: (x: 3pt, top: 3pt, bottom: 0pt),
+    stroke: (top: 1pt, left: 1pt, right: 1pt, bottom: 1pt),
+    outset: (bottom: 0pt),
+  )[#content]
+}
 
 #pocket("Pocket")
 
@@ -43,6 +51,6 @@
 
 #cite("Khaladkar and Thirumala", "'12-14", "Chinmay Khaladkar[1] Adhi Thirumala[2]", "[1]EE @ UCSB [2]CS @ UIUC", "Example Journal", "Example Title", "12-14-2025", "https://github.com/cxnmai/verbatypst.git")
 
-The Emergency Grid Resilience and Cybersecurity Act #underline("passed within a " + strong("week") + " because it addressed an immediate, highly visible national risk with broad, bipartisan agreement.") A recent near-miss cyber incident affecting regional power operators created urgency across party lines, reframing infrastructure security as a public-safety issue rather than a partisan one. The bill’s narrow scope—funding rapid security audits, patching critical vulnerabilities, and coordinating federal–state response protocols—avoided ideological flashpoints. Key committee chairs pre-negotiated language before introduction, ensuring it aligned with existing authorities and required no new regulatory regime. As a result, leadership fast-tracked the bill under suspension rules, limiting amendments and expediting floor consideration.
+The Emergency Grid Resilience and Cybersecurity Act #underline("passed within a " + "week" + " because it addressed an immediate, highly visible national risk with broad, bipartisan agreement.") A recent near-miss cyber incident affecting regional power operators created urgency across party lines, reframing infrastructure security as a public-safety issue rather than a partisan one. The bill’s narrow scope—funding rapid security audits, patching critical vulnerabilities, and coordinating federal–state response protocols—avoided ideological flashpoints. Key committee chairs pre-negotiated language before introduction, ensuring it aligned with existing authorities and required no new regulatory regime. As a result, leadership fast-tracked the bill under suspension rules, limiting amendments #ibox("and") expediting floor consideration.
 
 Additionally, the bill succeeded quickly because it balanced speed with fiscal restraint and stakeholder buy-in. Funding was reallocated from unobligated accounts, neutralizing deficit concerns, while implementation relied on public-private partnerships already in place with utilities and grid operators. Industry groups endorsed the bill publicly, labor unions supported the workforce provisions, and governors from both parties urged swift passage to protect essential services. With clear benefits, minimal controversy, and strong external pressure, congressional leadership secured overwhelming votes in both chambers, enabling the bill to reach the president’s desk in under seven days.
